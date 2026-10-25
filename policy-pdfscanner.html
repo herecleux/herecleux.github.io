@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDFCreator 隐私政策 / Privacy Policy - Heherson Montes Apura</title>
+  <style>
+    :root {
+      --primary: #FF4D15;
+      --primary-dark: #E03E0B;
+      --text: #1F2937;
+      --text-muted: #4B5563;
+      --bg: #F9FAFB;
+      --card-bg: #FFFFFF;
+      --border: #E5E7EB;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #F3F4F6;
+        --text-muted: #9CA3AF;
+        --bg: #111827;
+        --card-bg: #1F2937;
+        --border: #374151;
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 32px 24px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .back-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+      padding: 6px 14px;
+      border: 1px solid rgba(255, 77, 21, 0.3);
+      border-radius: 20px;
+      background: rgba(255, 77, 21, 0.05);
+      transition: all 0.2s;
+    }
+    .back-home:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+    .lang-switcher {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+    .lang-btn {
+      padding: 6px 14px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--card-bg);
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .lang-btn.active, .lang-btn:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+    header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .dev-badge {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 4px 12px;
+      border-radius: 6px;
+      background: rgba(255, 77, 21, 0.1);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 13px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+    p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 16px;
+    }
+    li {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    strong {
+      color: var(--text);
+    }
+    .highlight-box {
+      background: rgba(16, 185, 129, 0.08);
+      border-left: 4px solid #10B981;
+      padding: 14px 16px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .highlight-box p {
+      margin: 0;
+      color: var(--text);
+      font-weight: 500;
+    }
+    .contact-card {
+      background: rgba(255, 77, 21, 0.05);
+      border: 1px solid rgba(255, 77, 21, 0.2);
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 24px;
+    }
+    .contact-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--primary);
+    }
+    a {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    .section-divider {
+      margin: 40px 0;
+      border-top: 2px dashed var(--border);
+    }
+    footer {
+      text-align: center;
+      margin-top: 36px;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      padding-top: 18px;
+    }
+  </style>
+  <script>
+    function showLang(l) {
+      document.getElementById('sec-zh').style.display = (l === 'zh' || l === 'all') ? 'block' : 'none';
+      document.getElementById('sec-en').style.display = (l === 'en' || l === 'all') ? 'block' : 'none';
+      document.getElementById('btn-zh').className = (l === 'zh') ? 'lang-btn active' : 'lang-btn';
+      document.getElementById('btn-en').className = (l === 'en') ? 'lang-btn active' : 'lang-btn';
+      document.getElementById('btn-all').className = (l === 'all') ? 'lang-btn active' : 'lang-btn';
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="top-nav">
+      <a href="index.html" class="back-home">← Heherson Montes Apura Portfolio</a>
+      <div class="lang-switcher">
+        <button id="btn-all" class="lang-btn" onclick="showLang('all')">全部 / Both</button>
+        <button id="btn-zh" class="lang-btn active" onclick="showLang('zh')">简体中文</button>
+        <button id="btn-en" class="lang-btn" onclick="showLang('en')">English</button>
+      </div>
+    </div>
+
+    <!-- 简体中文版本 (CHINESE MAINLAND COMPLIANT - RULE 7.1) -->
+    <div id="sec-zh">
+      <header>
+        <h1>PDFCreator 隐私政策</h1>
+        <p class="subtitle">更新日期：2026年10月16日 | 生效日期：2026年10月16日</p>
+        <div class="dev-badge">开发者：Heherson Montes Apura | 应用名称：PDFCreator</div>
+        <p class="subtitle" style="margin-top: 4px;">应用包名：com.pdfreader.scanner</p>
+      </header>
+
+      <div class="highlight-box">
+        <p>🛡️ 100% 本地离线隐私保护承诺：PDFCreator 采用端侧本地计算架构，所有文档扫描、边缘识别、OCR文字识别、PDF转换及电子签名均在您的设备本地完成，绝不向外部云端服务器上传您的任何文件或个人数据。</p>
+      </div>
+
+      <h2>一、引言与开发者信息</h2>
+      <p>
+        欢迎使用由 <strong>Heherson Montes Apura</strong>（以下简称“我们”或“开发者”）开发并运营的 <strong>PDFCreator</strong> 移动应用程序（包名：<code>com.pdfreader.scanner</code>）。我们严格遵守《中华人民共和国个人信息保护法》及相关法律法规，深知个人信息对您的重要性，并致力于保护您的个人信息安全。
+      </p>
+
+      <h2>二、应用权限与个人信息收集清单</h2>
+      <p>PDFCreator 仅在您使用具体功能时按需申请最低限度的系统权限，绝无未经授权的后台隐蔽收集行为：</p>
+      <ul>
+        <li>
+          <strong>相机权限 (android.permission.CAMERA)：</strong><br>
+          <em>使用目的：</em> 仅在您主动点击相机扫描功能时调用，用于拍摄纸质合同、发票、笔记、证件或白板并将其转换为高质量PDF。<br>
+          <em>处理方式：</em> 图像流在设备内存中实时进行边缘检测与透视矫正，不保存无用缓存，<strong>绝不上传至任何外部服务器</strong>。
+        </li>
+        <li>
+          <strong>存储与媒体访问权限 (READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE)：</strong><br>
+          <em>使用目的：</em> 允许您选择并导入本地已有的图片或PDF文件进行查看、编辑、签名；将新生成的PDF文件保存至您设备的“文档 (Documents)”或“下载 (Download)”目录。<br>
+          <em>处理方式：</em> 仅在本地设备文件系统中读写，不回传服务器。
+        </li>
+        <li>
+          <strong>应用内购买与支付信息：</strong><br>
+          <em>使用目的：</em> 用于为您激活VIP专业版权益、订阅管理与购买记录恢复。<br>
+          <em>处理方式：</em> 全部交易流程均通过华为官方 <strong>HMS Core IAP (应用内支付)</strong> SDK 安全处理。开发者不收集、不访问、亦不存储您的银行卡号、支付密码等任何财务敏感信息。
+        </li>
+      </ul>
+
+      <h2>三、本地离线文字识别 (OCR)</h2>
+      <p>
+        本应用的文字识别 (OCR) 功能采用纯本地离线模型运算。从扫描图像中提取的文字仅保存在您本地文档草稿中，绝不发送到第三方AI云端分析。
+      </p>
+
+      <h2>四、第三方 SDK 清单与数据共享</h2>
+      <p>为保障应用基础功能稳定运行与华为应用市场的合规发布，本应用集成了以下官方 HMS Core SDK：</p>
+      <ul>
+        <li>
+          <strong>华为应用内支付 SDK (com.huawei.hms:iap)：</strong><br>
+          <em>使用目的：</em> 提供华为应用内购买、自动续费与权益核销。<br>
+          <em>第三方主体：</em> 华为软件技术有限公司。<br>
+          <em>隐私链接：</em> <a href="https://consumer.huawei.com/cn/privacy/privacy-policy/" target="_blank" rel="noopener">华为隐私政策</a>
+        </li>
+        <li>
+          <strong>华为应用更新 SDK (com.huawei.hms:appservice)：</strong><br>
+          <em>使用目的：</em> 检测华为应用市场的最新应用版本，提示用户更新升级。<br>
+          <em>第三方主体：</em> 华为软件技术有限公司。
+        </li>
+      </ul>
+      <p><strong>除上述华为官方服务外，PDFCreator 绝不包含任何第三方广告 SDK、用户画像追踪 SDK 或数据分析插件，绝不向任何第三方出售或共享您的个人数据。</strong></p>
+
+      <h2>五、数据存储与账号权利</h2>
+      <p>
+        由于所有扫描文件与电子签名均保存在您的本地设备存储中，您拥有 100% 的完全控制权：
+      </p>
+      <ul>
+        <li>您可随时在应用内删除单份或全部文档；</li>
+        <li>在系统设置中“清除应用数据”或“卸载应用”将立即且永久彻底删除本地缓存的所有文件与配置。</li>
+      </ul>
+
+      <h2>六、未成年人保护</h2>
+      <p>PDFCreator 非常重视未成年人个人信息保护，不主动面向未满14周岁的儿童收集任何个人信息。</p>
+
+      <div class="contact-card">
+        <h3>七、开发者联系方式与客服渠道（华为合规要求）</h3>
+        <p>如果您对本隐私政策有任何疑问、意见、投诉或需要咨询订阅退费与个人信息保护事宜，请通过以下方式联系开发者：</p>
+        <p>
+          <strong>开发者姓名：</strong> Heherson Montes Apura<br>
+          <strong>应用名称：</strong> PDFCreator (com.pdfreader.scanner)<br>
+          <strong>客户服务与隐私邮箱：</strong> <a href="mailto:rapsh75@yahoo.com">rapsh75@yahoo.com</a><br>
+          <strong>服务响应承诺：</strong> 我们承诺在收到您的邮件后 <strong>24小时内</strong> 予以响应并积极处理。
+        </p>
+      </div>
+    </div>
+
+    <!-- 分割线 -->
+    <div class="section-divider"></div>
+
+    <!-- ENGLISH VERSION -->
+    <div id="sec-en">
+      <header>
+        <h1>PDFCreator Privacy Policy</h1>
+        <p class="subtitle">Effective Date: October 16, 2026 | Last Updated: October 16, 2026</p>
+        <div class="dev-badge">Developer: Heherson Montes Apura | App: PDFCreator</div>
+        <p class="subtitle" style="margin-top: 4px;">Package Name: com.pdfreader.scanner</p>
+      </header>
+
+      <div class="highlight-box">
+        <p>🛡️ Zero Cloud Uploads: PDFCreator processes all document scans, image borders, OCR text, and digital signatures strictly on your device. We never transmit or store your files on external servers.</p>
+      </div>
+
+      <h2>1. Overview & Developer Information</h2>
+      <p>
+        Welcome to <strong>PDFCreator</strong> ("the App"), developed and operated by <strong>Heherson Montes Apura</strong> ("we", "us", or "the Developer"). We are fully dedicated to safeguarding your personal information and ensuring total data privacy.
+      </p>
+
+      <h2>2. Permissions and Data Collection</h2>
+      <p>PDFCreator requests only the minimum necessary permissions required for core document functionality:</p>
+      <ul>
+        <li>
+          <strong>Camera (android.permission.CAMERA):</strong> Used exclusively when you photograph paper documents, contracts, or receipts. All image edge-detection and enhancement is processed locally in memory. No photos are uploaded over the network.
+        </li>
+        <li>
+          <strong>Storage Access (READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE):</strong> Used to allow you to select existing PDF files from your device and save generated PDFs directly to your device's Documents or Download directory.
+        </li>
+        <li>
+          <strong>In-App Purchases (Huawei HMS Core IAP):</strong> When purchasing VIP subscriptions or licenses, transactions are securely handled directly by Huawei In-App Purchases. PDFCreator never collects or stores credit card numbers or financial passwords.
+        </li>
+      </ul>
+
+      <h2>3. Third-Party Services and SDKs</h2>
+      <p>To enable safe purchases and update checks on Huawei devices, the App integrates:</p>
+      <ul>
+        <li><strong>Huawei HMS Core IAP (`com.huawei.hms:iap`):</strong> Secure billing and auto-renewing subscriptions.</li>
+        <li><strong>Huawei AppService (`com.huawei.hms:appservice`):</strong> AppGallery update notifications.</li>
+      </ul>
+      <p>PDFCreator contains <strong>no third-party advertising SDKs</strong>, no analytics tracking, and no user profiling tools.</p>
+
+      <div class="contact-card">
+        <h3>4. Developer & Customer Support Contact</h3>
+        <p>For questions regarding this policy, VIP purchases, refunds, or data requests, please contact:</p>
+        <p>
+          <strong>Developer:</strong> Heherson Montes Apura<br>
+          <strong>App Name:</strong> PDFCreator (com.pdfreader.scanner)<br>
+          <strong>Customer Support Email:</strong> <a href="mailto:rapsh75@yahoo.com">rapsh75@yahoo.com</a><br>
+          <strong>Response Time:</strong> Response guaranteed within 24 hours.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Heherson Montes Apura. PDFCreator. All rights reserved. &bull; <a href="index.html">Developer Portfolio</a></p>
+    </footer>
+  </div>
+</body>
+</html>

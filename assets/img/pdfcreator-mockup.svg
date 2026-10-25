@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pdfGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0E2140" />
+      <stop offset="100%" stop-color="#1E3E62" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF5722" />
+      <stop offset="100%" stop-color="#FF8A65" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#pdfGrad)" rx="16"/>
+  <circle cx="530" cy="70" r="140" fill="#2563EB" opacity="0.15" />
+  <circle cx="80" cy="340" r="100" fill="#FF5722" opacity="0.1" />
+
+  <!-- Grid overlay -->
+  <pattern id="dotPattern" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1.5" fill="#FFFFFF" opacity="0.08"/>
+  </pattern>
+  <rect width="600" height="400" fill="url(#dotPattern)" rx="16"/>
+
+  <!-- Phone frame mockup -->
+  <g transform="translate(180, 45)" filter="url(#cardShadow)">
+    <!-- Device body -->
+    <rect width="240" height="320" rx="28" fill="#FFFFFF" stroke="#0A192F" stroke-width="4"/>
+    <!-- Top Notch / Speaker -->
+    <rect x="85" y="10" width="70" height="6" rx="3" fill="#0A192F" opacity="0.3"/>
+    
+    <!-- Screen content -->
+    <rect x="12" y="26" width="216" height="280" rx="16" fill="#F8FAFC"/>
+    
+    <!-- Scanner HUD overlay -->
+    <rect x="24" y="44" width="192" height="180" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <!-- Simulated document -->
+    <rect x="36" y="58" width="168" height="150" rx="6" fill="#F1F5F9"/>
+    <!-- Document lines -->
+    <rect x="48" y="72" width="90" height="8" rx="4" fill="#0E2140" opacity="0.8"/>
+    <rect x="48" y="88" width="144" height="4" rx="2" fill="#94A3B8"/>
+    <rect x="48" y="98" width="130" height="4" rx="2" fill="#94A3B8"/>
+    <rect x="48" y="108" width="110" height="4" rx="2" fill="#94A3B8"/>
+    <rect x="48" y="124" width="70" height="6" rx="3" fill="#FF5722" opacity="0.9"/>
+    <rect x="48" y="138" width="144" height="4" rx="2" fill="#CBD5E1"/>
+    <rect x="48" y="148" width="136" height="4" rx="2" fill="#CBD5E1"/>
+    
+    <!-- Green edge scanner corner guides -->
+    <path d="M 28 56 L 28 48 L 36 48" stroke="#10B981" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 212 56 L 212 48 L 204 48" stroke="#10B981" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 28 212 L 28 220 L 36 220" stroke="#10B981" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 212 212 L 212 220 L 204 220" stroke="#10B981" stroke-width="3" fill="none" stroke-linecap="round"/>
+    
+    <!-- Scanner Laser Beam -->
+    <line x1="28" y1="120" x2="212" y2="120" stroke="#10B981" stroke-width="2" stroke-dasharray="4,2"/>
+    <rect x="28" y="119" width="184" height="16" fill="#10B981" opacity="0.15"/>
+
+    <!-- Bottom Action Button on phone -->
+    <rect x="36" y="240" width="168" height="38" rx="19" fill="#0E2140"/>
+    <text x="120" y="264" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">⚡ SCAN &amp; EXPORT PDF</text>
+  </g>
+
+  <!-- Left Floating Badge -->
+  <g transform="translate(45, 120)" filter="url(#cardShadow)">
+    <rect width="130" height="44" rx="22" fill="#FF5722" stroke="#0A192F" stroke-width="2"/>
+    <text x="65" y="27" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="12" font-weight="900" text-anchor="middle">🛡️ 100% OFFLINE</text>
+  </g>
+
+  <!-- Right Floating Badge -->
+  <g transform="translate(425, 230)" filter="url(#cardShadow)">
+    <rect width="130" height="44" rx="22" fill="#2563EB" stroke="#0A192F" stroke-width="2"/>
+    <text x="65" y="27" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="12" font-weight="900" text-anchor="middle">⚡ HUAWEI HMS</text>
+  </g>
+
+  <!-- App Title Bar in SVG -->
+  <g transform="translate(30, 45)">
+    <text x="0" y="24" fill="#FFFFFF" font-family="Impact, Arial Black, sans-serif" font-size="28" letter-spacing="1">PDF CREATOR</text>
+    <text x="0" y="44" fill="#93C5FD" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold">SCANNER &amp; OCR SUITE</text>
+  </g>
+</svg>

@@ -1,323 +1,574 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PDFCreator 隐私政策 / Privacy Policy - Heherson Montes Apura</title>
-  <style>
-    :root {
-      --primary: #FF4D15;
-      --primary-dark: #E03E0B;
-      --text: #1F2937;
-      --text-muted: #4B5563;
-      --bg: #F9FAFB;
-      --card-bg: #FFFFFF;
-      --border: #E5E7EB;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --text: #F3F4F6;
-        --text-muted: #9CA3AF;
-        --bg: #111827;
-        --card-bg: #1F2937;
-        --border: #374151;
-      }
-    }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding: 24px 16px;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background: var(--card-bg);
-      padding: 32px 24px;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      border: 1px solid var(--border);
-    }
-    .lang-switcher {
-      display: flex;
-      justify-content: flex-end;
-      gap: 8px;
-      margin-bottom: 16px;
-    }
-    .lang-btn {
-      padding: 6px 14px;
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      background: var(--card-bg);
-      color: var(--text);
-      font-size: 13px;
-      font-weight: 600;
-      cursor: pointer;
-      text-decoration: none;
-      transition: all 0.2s;
-    }
-    .lang-btn.active, .lang-btn:hover {
-      background: var(--primary);
-      color: #fff;
-      border-color: var(--primary);
-    }
-    header {
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 20px;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 24px;
-      font-weight: 800;
-      color: var(--primary);
-      margin-bottom: 6px;
-    }
-    .subtitle {
-      font-size: 13px;
-      color: var(--text-muted);
-    }
-    .dev-badge {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 4px 12px;
-      border-radius: 6px;
-      background: rgba(255, 77, 21, 0.1);
-      color: var(--primary);
-      font-weight: 700;
-      font-size: 13px;
-    }
-    h2 {
-      font-size: 18px;
-      font-weight: 700;
-      margin-top: 28px;
-      margin-bottom: 10px;
-      color: var(--text);
-    }
-    p {
-      font-size: 14px;
-      color: var(--text-muted);
-      margin-bottom: 14px;
-    }
-    ul {
-      margin-left: 20px;
-      margin-bottom: 16px;
-    }
-    li {
-      font-size: 14px;
-      color: var(--text-muted);
-      margin-bottom: 8px;
-    }
-    strong {
-      color: var(--text);
-    }
-    .highlight-box {
-      background: rgba(16, 185, 129, 0.08);
-      border-left: 4px solid #10B981;
-      padding: 14px 16px;
-      border-radius: 8px;
-      margin: 20px 0;
-    }
-    .highlight-box p {
-      margin: 0;
-      color: var(--text);
-      font-weight: 500;
-    }
-    .contact-card {
-      background: rgba(255, 77, 21, 0.05);
-      border: 1px solid rgba(255, 77, 21, 0.2);
-      border-radius: 12px;
-      padding: 18px;
-      margin-top: 24px;
-    }
-    .contact-card h3 {
-      font-size: 15px;
-      font-weight: 700;
-      margin-bottom: 6px;
-      color: var(--primary);
-    }
-    a {
-      color: var(--primary);
-      text-decoration: underline;
-    }
-    .section-divider {
-      margin: 40px 0;
-      border-top: 2px dashed var(--border);
-    }
-    footer {
-      text-align: center;
-      margin-top: 36px;
-      font-size: 12px;
-      color: var(--text-muted);
-      border-top: 1px solid var(--border);
-      padding-top: 18px;
-    }
-  </style>
-  <script>
-    function showLang(l) {
-      document.getElementById('sec-zh').style.display = (l === 'zh' || l === 'all') ? 'block' : 'none';
-      document.getElementById('sec-en').style.display = (l === 'en' || l === 'all') ? 'block' : 'none';
-      document.getElementById('btn-zh').className = (l === 'zh') ? 'lang-btn active' : 'lang-btn';
-      document.getElementById('btn-en').className = (l === 'en') ? 'lang-btn active' : 'lang-btn';
-      document.getElementById('btn-all').className = (l === 'all') ? 'lang-btn active' : 'lang-btn';
-    }
-  </script>
+  <title>Heherson Montes Apura — Mobile & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Heherson Montes Apura (herecleux) — Mobile & Full-Stack Developer crafting fast, resilient mobile apps and modern web experiences.">
+  <meta property="og:title" content="Heherson Montes Apura — Developer Portfolio">
+  <meta property="og:description" content="Mobile & Full-Stack Developer specializing in Android, Flutter, React, and local-first privacy architectures.">
+  <meta property="og:image" content="assets/img/avatar.jpg">
+  <meta property="og:url" content="https://herecleux.github.io/">
+
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 </head>
 <body>
-  <div class="container">
-    <div class="lang-switcher">
-      <button id="btn-all" class="lang-btn" onclick="showLang('all')">全部 / Both</button>
-      <button id="btn-zh" class="lang-btn active" onclick="showLang('zh')">简体中文</button>
-      <button id="btn-en" class="lang-btn" onclick="showLang('en')">English</button>
-    </div>
 
-    <!-- 简体中文版本 (CHINESE MAINLAND COMPLIANT - RULE 7.1) -->
-    <div id="sec-zh">
-      <header>
-        <h1>PDFCreator 隐私政策</h1>
-        <p class="subtitle">更新日期：2026年10月16日 | 生效日期：2026年10月16日</p>
-        <div class="dev-badge">开发者：Heherson Montes Apura | 应用名称：PDFCreator</div>
-        <p class="subtitle" style="margin-top: 4px;">应用包名：com.pdfreader.scanner</p>
-      </header>
+  <!-- ============================================================
+       TOP NAVIGATION BAR
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="index.html" class="brand-badge">
+        <div class="brand-icon">✦</div>
+        <div class="brand-text">
+          <span class="brand-name">HEHERSON MONTES APURA</span>
+          <span class="brand-role">Mobile &amp; Full-Stack Engineer</span>
+        </div>
+      </a>
 
-      <div class="highlight-box">
-        <p>🛡️ 100% 本地离线隐私保护承诺：PDFCreator 采用端侧本地计算架构，所有文档扫描、边缘识别、OCR文字识别、PDF转换及电子签名均在您的设备本地完成，绝不向外部云端服务器上传您的任何文件或个人数据。</p>
+      <div class="header-center-pill">
+        <span>⚡ CREATIVE PORTFOLIO</span>
       </div>
 
-      <h2>一、引言与开发者信息</h2>
-      <p>
-        欢迎使用由 <strong>Heherson Montes Apura</strong>（以下简称“我们”或“开发者”）开发并运营的 <strong>PDFCreator</strong> 移动应用程序（包名：<code>com.pdfreader.scanner</code>）。我们严格遵守《中华人民共和国个人信息保护法》及相关法律法规，深知个人信息对您的重要性，并致力于保护您的个人信息安全。
-      </p>
-
-      <h2>二、应用权限与个人信息收集清单</h2>
-      <p>PDFCreator 仅在您使用具体功能时按需申请最低限度的系统权限，绝无未经授权的后台隐蔽收集行为：</p>
-      <ul>
-        <li>
-          <strong>相机权限 (android.permission.CAMERA)：</strong><br>
-          <em>使用目的：</em> 仅在您主动点击相机扫描功能时调用，用于拍摄纸质合同、发票、笔记、证件或白板并将其转换为高质量PDF。<br>
-          <em>处理方式：</em> 图像流在设备内存中实时进行边缘检测与透视矫正，不保存无用缓存，<strong>绝不上传至任何外部服务器</strong>。
-        </li>
-        <li>
-          <strong>存储与媒体访问权限 (READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE)：</strong><br>
-          <em>使用目的：</em> 允许您选择并导入本地已有的图片或PDF文件进行查看、编辑、签名；将新生成的PDF文件保存至您设备的“文档 (Documents)”或“下载 (Download)”目录。<br>
-          <em>处理方式：</em> 仅在本地设备文件系统中读写，不回传服务器。
-        </li>
-        <li>
-          <strong>应用内购买与支付信息：</strong><br>
-          <em>使用目的：</em> 用于为您激活VIP专业版权益、订阅管理与购买记录恢复。<br>
-          <em>处理方式：</em> 全部交易流程均通过华为官方 <strong>HMS Core IAP (应用内支付)</strong> SDK 安全处理。开发者不收集、不访问、亦不存储您的银行卡号、支付密码等任何财务敏感信息。
-        </li>
-      </ul>
-
-      <h2>三、本地离线文字识别 (OCR)</h2>
-      <p>
-        本应用的文字识别 (OCR) 功能采用纯本地离线模型运算。从扫描图像中提取的文字仅保存在您本地文档草稿中，绝不发送到第三方AI云端分析。
-      </p>
-
-      <h2>四、第三方 SDK 清单与数据共享</h2>
-      <p>为保障应用基础功能稳定运行与华为应用市场的合规发布，本应用集成了以下官方 HMS Core SDK：</p>
-      <ul>
-        <li>
-          <strong>华为应用内支付 SDK (com.huawei.hms:iap)：</strong><br>
-          <em>使用目的：</em> 提供华为应用内购买、自动续费与权益核销。<br>
-          <em>第三方主体：</em> 华为软件技术有限公司。<br>
-          <em>隐私链接：</em> <a href="https://consumer.huawei.com/cn/privacy/privacy-policy/" target="_blank" rel="noopener">华为隐私政策</a>
-        </li>
-        <li>
-          <strong>华为应用更新 SDK (com.huawei.hms:appservice)：</strong><br>
-          <em>使用目的：</em> 检测华为应用市场的最新应用版本，提示用户更新升级。<br>
-          <em>第三方主体：</em> 华为软件技术有限公司。
-        </li>
-      </ul>
-      <p><strong>除上述华为官方服务外，PDFCreator 绝不包含任何第三方广告 SDK、用户画像追踪 SDK 或数据分析插件，绝不向任何第三方出售或共享您的个人数据。</strong></p>
-
-      <h2>五、数据存储与账号权利</h2>
-      <p>
-        由于所有扫描文件与电子签名均保存在您的本地设备存储中，您拥有 100% 的完全控制权：
-      </p>
-      <ul>
-        <li>您可随时在应用内删除单份或全部文档；</li>
-        <li>在系统设置中“清除应用数据”或“卸载应用”将立即且永久彻底删除本地缓存的所有文件与配置。</li>
-      </ul>
-
-      <h2>六、未成年人保护</h2>
-      <p>PDFCreator 非常重视未成年人个人信息保护，不主动面向未满14周岁的儿童收集任何个人信息。</p>
-
-      <div class="contact-card">
-        <h3>七、开发者联系方式与客服渠道（华为合规要求）</h3>
-        <p>如果您对本隐私政策有任何疑问、意见、投诉或需要咨询订阅退费与个人信息保护事宜，请通过以下方式联系开发者：</p>
-        <p>
-          <strong>开发者姓名：</strong> Heherson Montes Apura<br>
-          <strong>应用名称：</strong> PDFCreator (com.pdfreader.scanner)<br>
-          <strong>客户服务与隐私邮箱：</strong> <a href="mailto:rapsh75@yahoo.com">rapsh75@yahoo.com</a><br>
-          <strong>服务响应承诺：</strong> 我们承诺在收到您的邮件后 <strong>24小时内</strong> 予以响应并积极处理。
-        </p>
+      <div class="header-actions">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>AVAILABLE FOR WORK</span>
+        </div>
+        <a href="policy-pdfscanner.html" class="nav-link-policy" title="View PDFCreator Privacy Policy">
+          <span>App Privacy</span>
+          <span>↗</span>
+        </a>
       </div>
     </div>
+  </header>
 
-    <!-- 分割线 -->
-    <div class="section-divider"></div>
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <!-- Left: Text & Pitch -->
+        <div class="hero-intro">
+          <div class="hello-sticker">HELLO!</div>
+          
+          <h1 class="hero-title">
+            <div class="title-line-im">
+              <span>I'M</span>
+              <svg class="star-doodle" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0L14.6 9.4L24 12L14.6 14.6L12 24L9.4 14.6L0 12L9.4 9.4L12 0Z"/>
+              </svg>
+            </div>
+            <span>HEHERSON</span>
+          </h1>
 
-    <!-- ENGLISH VERSION -->
-    <div id="sec-en">
-      <header>
-        <h1>PDFCreator Privacy Policy</h1>
-        <p class="subtitle">Effective Date: October 16, 2026 | Last Updated: October 16, 2026</p>
-        <div class="dev-badge">Developer: Heherson Montes Apura | App: PDFCreator</div>
-        <p class="subtitle" style="margin-top: 4px;">Package Name: com.pdfreader.scanner</p>
-      </header>
+          <div class="hero-highlighter">
+            I engineer resilient mobile apps &amp; web experiences that <span>connect &amp; convert.</span>
+          </div>
 
-      <div class="highlight-box">
-        <p>🛡️ Zero Cloud Uploads: PDFCreator processes all document scans, image borders, OCR text, and digital signatures strictly on your device. We never transmit or store your files on external servers.</p>
+          <div class="hero-meta-row">
+            <div class="location-badge">
+              <span>🌐</span>
+              <span>BASED IN PHILIPPINES · WORKING WORLDWIDE</span>
+            </div>
+            <a href="#selected-work" class="cta-button-primary">
+              <span>EXPLORE WORK</span>
+              <span>↓</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Navy Visual Centerpiece with Avatar -->
+        <div class="hero-visual">
+          <!-- Sparkle Doodles -->
+          <span class="doodle-sparkle-1">✦</span>
+          <span class="doodle-sparkle-2">★</span>
+
+          <!-- Top Playful Badge -->
+          <div class="sticker-top-badge">
+            <span class="badge-text">CODE</span>
+            <span class="badge-sub">with purpose</span>
+            <span style="font-size: 14px; margin-top: 2px;">⚡</span>
+          </div>
+
+          <!-- Giant Navy Cutout Frame -->
+          <div class="navy-backdrop">
+            <div class="navy-backdrop-grid"></div>
+            <div class="navy-backdrop-ring"></div>
+            <div class="avatar-img-wrap">
+              <img id="hero-avatar-img" class="avatar-img" src="assets/img/avatar.jpg" alt="Heherson Montes Apura" onerror="this.src='https://avatars.githubusercontent.com/u/45097168?v=4'">
+            </div>
+          </div>
+
+          <!-- Tilted Superpower Sticker -->
+          <div class="superpower-sticker">
+            <span class="lightning">⚡</span>
+            <div>
+              <div>CLEAN CODE IS MY</div>
+              <div style="color: var(--cyan-accent); font-size: 15px;">SUPERPOWER</div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <h2>1. Overview & Developer Information</h2>
-      <p>
-        Welcome to <strong>PDFCreator</strong> ("the App"), developed and operated by <strong>Heherson Montes Apura</strong> ("we", "us", or "the Developer"). We are fully dedicated to safeguarding your personal information and ensuring total data privacy.
-      </p>
+    <!-- ============================================================
+         "WHAT I DO" SECTION
+         ============================================================ -->
+    <section class="section-services">
+      <div class="container">
+        <div class="services-header">
+          <h2 class="section-title">WHAT I DO</h2>
+          <svg class="wavy-underline" viewBox="0 0 100 12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+            <path d="M2 6 Q 25 0, 50 6 T 98 6" />
+          </svg>
+        </div>
 
-      <h2>2. Permissions and Data Collection</h2>
-      <p>PDFCreator requests only the minimum necessary permissions required for core document functionality:</p>
-      <ul>
-        <li>
-          <strong>Camera (android.permission.CAMERA):</strong> Used exclusively when you photograph paper documents, contracts, or receipts. All image edge-detection and enhancement is processed locally in memory. No photos are uploaded over the network.
-        </li>
-        <li>
-          <strong>Storage Access (READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE):</strong> Used to allow you to select existing PDF files from your device and save generated PDFs directly to your device's Documents or Download directory.
-        </li>
-        <li>
-          <strong>In-App Purchases (Huawei HMS Core IAP):</strong> When purchasing VIP subscriptions or licenses, transactions are securely handled directly by Huawei In-App Purchases. PDFCreator never collects or stores credit card numbers or financial passwords.
-        </li>
-      </ul>
+        <div class="services-grid">
+          <!-- Card 1: Mobile Apps -->
+          <div class="service-card">
+            <div class="service-circle-icon circle-navy">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">MOBILE DEV</h3>
+            <p class="service-desc">Native Android &amp; Flutter engineering built for smooth 60fps performance and cross-device stability.</p>
+          </div>
 
-      <h2>3. Third-Party Services and SDKs</h2>
-      <p>To enable safe purchases and update checks on Huawei devices, the App integrates:</p>
-      <ul>
-        <li><strong>Huawei HMS Core IAP (`com.huawei.hms:iap`):</strong> Secure billing and auto-renewing subscriptions.</li>
-        <li><strong>Huawei AppService (`com.huawei.hms:appservice`):</strong> AppGallery update notifications.</li>
-      </ul>
-      <p>PDFCreator contains <strong>no third-party advertising SDKs</strong>, no analytics tracking, and no user profiling tools.</p>
+          <!-- Card 2: Web Applications -->
+          <div class="service-card">
+            <div class="service-circle-icon circle-blue">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">WEB APPS</h3>
+            <p class="service-desc">Modern React, TypeScript, and Vite SPAs with lightning-fast load times and bulletproof architecture.</p>
+          </div>
 
-      <div class="contact-card">
-        <h3>4. Developer & Customer Support Contact</h3>
-        <p>For questions regarding this policy, VIP purchases, refunds, or data requests, please contact:</p>
-        <p>
-          <strong>Developer:</strong> Heherson Montes Apura<br>
-          <strong>App Name:</strong> PDFCreator (com.pdfreader.scanner)<br>
-          <strong>Customer Support Email:</strong> <a href="mailto:rapsh75@yahoo.com">rapsh75@yahoo.com</a><br>
-          <strong>Response Time:</strong> Response guaranteed within 24 hours.
-        </p>
+          <!-- Card 3: UI / UX -->
+          <div class="service-card">
+            <div class="service-circle-icon circle-coral">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20h9"></path>
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">UI/UX DESIGN</h3>
+            <p class="service-desc">User-centered interfaces, intuitive design systems, and delightful tactile micro-interactions.</p>
+          </div>
+
+          <!-- Card 4: Local-first & Privacy -->
+          <div class="service-card">
+            <div class="service-circle-icon circle-cyan">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">APP PRIVACY</h3>
+            <p class="service-desc">Offline-first local processing, zero cloud data leakages, and Huawei HMS / Google store compliance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TRANSITION SEAL & STAMP
+         ============================================================ -->
+    <div class="container">
+      <div class="transition-row">
+        <!-- Rubber Stamp Badge -->
+        <div class="stamp-seal">
+          <div class="heart">❤️</div>
+          <div class="stamp-text">
+            GOOD CODE<br>★<br>GOOD BUSINESS
+          </div>
+        </div>
+
+        <!-- Hand-drawn Arrow Doodle pointing to Work -->
+        <svg class="loop-arrow-doodle" viewBox="0 0 100 50" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <path d="M10,15 C40,5 70,10 75,25 C80,40 50,42 45,30 C40,20 65,30 85,38" />
+          <polyline points="75,40 86,39 82,30" />
+        </svg>
+
+        <div class="doodle-asterisk-right">✦</div>
       </div>
     </div>
 
-    <footer>
-      <p>&copy; 2026 Heherson Montes Apura. PDFCreator. All rights reserved.</p>
-    </footer>
-  </div>
+    <!-- ============================================================
+         "SELECTED WORK" SECTION (DIVIDED INTO WEB, APPS, PLUGIN)
+         ============================================================ -->
+    <section id="selected-work" class="section-work">
+      <div class="container">
+        <div class="work-header-row">
+          <div class="work-title-group">
+            <h2 class="section-title">SELECTED WORK</h2>
+            <svg class="sunray-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <line x1="12" y1="1" x2="12" y2="4"></line>
+              <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"></line>
+              <line x1="1" y1="12" x2="4" y2="12"></line>
+              <line x1="19.78" y1="4.22" x2="17.66" y2="6.34"></line>
+              <line x1="23" y1="12" x2="20" y2="12"></line>
+            </svg>
+          </div>
+
+          <div class="tape-sticker">A few projects I'm proud of</div>
+        </div>
+
+        <!-- Interactive Category Filter Navigation -->
+        <div class="category-filter-nav">
+          <button class="filter-btn active" data-filter="all">
+            <span>ALL</span>
+            <span class="filter-badge-count">9</span>
+          </button>
+          <button class="filter-btn" data-filter="web">
+            <span>🌐 WEB</span>
+            <span class="filter-badge-count">4</span>
+          </button>
+          <button class="filter-btn" data-filter="apps">
+            <span>📱 APPS</span>
+            <span class="filter-badge-count">4</span>
+          </button>
+          <button class="filter-btn" data-filter="plugin">
+            <span>🔌 PLUGIN</span>
+            <span class="filter-badge-count">1</span>
+          </button>
+        </div>
+
+        <!-- ==========================================
+             PART 1: WEB
+             ========================================== -->
+        <div class="work-category-block" data-category="web">
+          <div class="work-category-header">
+            <div class="category-badge-title">
+              <span class="cat-icon">🌐</span>
+              <span>WEB PLATFORMS &amp; WEBSITES</span>
+            </div>
+            <span class="category-count-pill">4 Live Websites</span>
+          </div>
+
+          <div class="projects-grid">
+            <!-- 1. VacationHive -->
+            <a href="https://vacationhive.com" target="_blank" rel="noopener noreferrer" class="project-card" title="Visit VacationHive (Live Site)">
+              <div class="project-thumb thumb-banner">
+                <img src="assets/img/vacationhive-banner.png" alt="VacationHive Web Platform Preview">
+                <span class="project-badge-tag">VITE SPA</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-row">
+                  <h3 class="project-title">VacationHive</h3>
+                  <span class="project-arrow-btn">↗</span>
+                </div>
+                <div class="project-category">Web · Stay Booking Platform</div>
+                <p class="project-desc">Modern vacation rental and getaway discovery application engineered with interactive search, instant filtering, and clean reactive UI.</p>
+                <div class="project-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Vite</span>
+                  <span class="tech-tag">Tailwind</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- 2. Ootlah (no-follow) -->
+            <a href="https://ootlah.com" target="_blank" rel="nofollow noopener noreferrer" class="project-card" title="Visit Ootlah (Live Site)">
+              <div class="project-thumb">
+                <img src="assets/img/ootlah-mockup.svg" alt="Ootlah Tourism Platform Preview">
+                <span class="project-badge-tag">GCC TOURISM</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-row">
+                  <h3 class="project-title">Ootlah</h3>
+                  <span class="project-arrow-btn">↗</span>
+                </div>
+                <div class="project-category">Web · Tours &amp; Activities Portal</div>
+                <p class="project-desc">Premier GCC tourism, outdoor experiences, and activities booking portal across Bahrain, Saudi Arabia, UAE, and beyond.</p>
+                <div class="project-tags">
+                  <span class="tech-tag">Next.js/React</span>
+                  <span class="tech-tag">E-Commerce</span>
+                  <span class="tech-tag">Booking Engine</span>
+                  <span class="tech-tag">GCC</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- 3. Weetas (no-follow) -->
+            <a href="https://weetas.com" target="_blank" rel="nofollow noopener noreferrer" class="project-card" title="Visit Weetas (Live Site)">
+              <div class="project-thumb thumb-banner">
+                <img src="assets/img/weetas-banner.png" alt="Weetas Real Estate Preview">
+                <span class="project-badge-tag">REAL ESTATE</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-row">
+                  <h3 class="project-title">Weetas</h3>
+                  <span class="project-arrow-btn">↗</span>
+                </div>
+                <div class="project-category">Web · Property Marketplace</div>
+                <p class="project-desc">Leading Bahrain and regional real estate portal featuring luxury apartments, residential sales, villa rentals, and smart property filters.</p>
+                <div class="project-tags">
+                  <span class="tech-tag">Real Estate</span>
+                  <span class="tech-tag">Search Engine</span>
+                  <span class="tech-tag">Property Portal</span>
+                  <span class="tech-tag">Web</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- 4. Homefix (no-follow) -->
+            <a href="https://homefix.bh" target="_blank" rel="nofollow noopener noreferrer" class="project-card" title="Visit Homefix (Live Site)">
+              <div class="project-thumb thumb-banner">
+                <img src="assets/img/homefix-banner.png" alt="Homefix Facility Maintenance Preview">
+                <span class="project-badge-tag">FACILITY MGMT</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-row">
+                  <h3 class="project-title">Homefix</h3>
+                  <span class="project-arrow-btn">↗</span>
+                </div>
+                <div class="project-category">Web · On-Demand Home Services</div>
+                <p class="project-desc">Comprehensive on-demand home repair, plumbing, electrical, and facility management booking platform in Bahrain.</p>
+                <div class="project-tags">
+                  <span class="tech-tag">On-Demand Services</span>
+                  <span class="tech-tag">Facility Mgmt</span>
+                  <span class="tech-tag">Bahrain</span>
+                  <span class="tech-tag">Web App</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             PART 2: APPS
+             ========================================== -->
+        <div class="work-category-block" data-category="apps">
+          <div class="work-category-header">
+            <div class="category-badge-title">
+              <span class="cat-icon">📱</span>
+              <span>MOBILE APPLICATIONS</span>
+            </div>
+            <span class="category-count-pill">4 Apps on Google Play</span>
+          </div>
+
+          <div class="projects-grid grid-apps">
+            <!-- 1. PdfCreator -->
+            <a href="https://play.google.com/store/apps/details?id=com.pdfreader.scanner" target="_blank" rel="noopener noreferrer" class="project-card" title="Download PdfCreator on Google Play Store">
+              <div class="project-thumb thumb-banner">
+                <img src="assets/img/pdfcreator-banner.png" alt="PdfCreator Scanner App Preview">
+                <span class="project-badge-tag">GOOGLE PLAY</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-row">
+                  <h3 class="project-title">PdfCreator</h3>
+                  <span class="project-arrow-btn">↗</span>
+                </div>
+                <div class="project-category">Android · Document Scanner &amp; OCR</div>
+                <p class="project-desc">High-speed mobile document scanner with camera edge detection, local OCR extraction, and PDF generation with 100% on-device zero-leak privacy.</p>
+                <div class="project-tags">
+                  <span class="tech-tag">Android</span>
+                  <span class="tech-tag">Google Play</span>
+                  <span class="tech-tag">Local OCR</span>
+                  <span class="tech-tag">In-App Purchases</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- 2. SudoKey -->
+            <a href="https://play.google.com/store/apps/details?id=com.sudokey.sudokey" target="_blank" rel="noopener noreferrer" class="project-card" title="Download SudoKey on Google Play Store">
+              <div class="project-thumb thumb-banner">
+                <img src="assets/img/sudokey-banner.png" alt="SudoKey Encrypted Private Vault Preview">
+                <span class="project-badge-tag">AES-256 VAULT</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-row">
+                  <h3 class="project-title">SudoKey</h3>
+                  <span class="project-arrow-btn">↗</span>
+                </div>
+                <div class="project-category">Android · Encrypted Private Vault</div>
+                <p class="project-desc">Military-grade AES-256 encrypted vault to securely lock confidential photos, videos, and private notes with zero-knowledge hardware storage.</p>
+                <div class="project-tags">
+                  <span class="tech-tag">Android</span>
+                  <span class="tech-tag">Google Play</span>
+                  <span class="tech-tag">AES-256</span>
+                  <span class="tech-tag">Zero-Knowledge</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- 3. JustShot -->
+            <a href="https://play.google.com/store/apps/details?id=com.justshot.game" target="_blank" rel="noopener noreferrer" class="project-card" title="Download JustShot on Google Play Store">
+              <div class="project-thumb thumb-banner">
+                <img src="assets/img/justshot-banner.png" alt="JustShot Retro Hound Game Preview">
+                <span class="project-badge-tag">ARCADE GAME</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-row">
+                  <h3 class="project-title">JustShot</h3>
+                  <span class="project-arrow-btn">↗</span>
+                </div>
+                <div class="project-category">Android · Retro Arcade Shooter</div>
+                <p class="project-desc">Action-packed retro arcade shooting game featuring the faithful hound, combo streaks, score multipliers, and fast-paced nostalgic gameplay.</p>
+                <div class="project-tags">
+                  <span class="tech-tag">Android</span>
+                  <span class="tech-tag">Google Play</span>
+                  <span class="tech-tag">Game Dev</span>
+                  <span class="tech-tag">Arcade</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- 4. Ootlah App (no-follow) -->
+            <a href="https://play.google.com/store/search?q=ootlah" target="_blank" rel="nofollow noopener noreferrer" class="project-card" title="View Ootlah on Google Play Store">
+              <div class="project-thumb thumb-banner">
+                <img src="assets/img/ootlah-app-banner.png" alt="Ootlah Mobile App Preview">
+                <span class="project-badge-tag">GOOGLE PLAY</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-row">
+                  <h3 class="project-title">Ootlah</h3>
+                  <span class="project-arrow-btn">↗</span>
+                </div>
+                <div class="project-category">Android · Travel &amp; Ticket Booking</div>
+                <p class="project-desc">Official Android mobile app for discovering and booking tickets for holiday tours, theme parks, desert safaris, and GCC outdoor experiences.</p>
+                <div class="project-tags">
+                  <span class="tech-tag">Android</span>
+                  <span class="tech-tag">Mobile App</span>
+                  <span class="tech-tag">Google Play</span>
+                  <span class="tech-tag">Ticketing</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             PART 3: PLUGIN
+             ========================================== -->
+        <div class="work-category-block" data-category="plugin">
+          <div class="work-category-header">
+            <div class="category-badge-title">
+              <span class="cat-icon">🔌</span>
+              <span>PLUGINS &amp; EXTENSIONS</span>
+            </div>
+            <span class="category-count-pill">WordPress.org Directory</span>
+          </div>
+
+          <div class="projects-grid grid-plugin">
+            <!-- 1. InvoBill -->
+            <a href="https://wordpress.org/plugins/invobill/" target="_blank" rel="noopener noreferrer" class="project-card" title="View InvoBill on WordPress.org">
+              <div class="project-thumb">
+                <img src="assets/img/invobill-mockup.svg" alt="InvoBill WordPress Plugin Preview">
+                <span class="project-badge-tag">WORDPRESS.ORG</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-row">
+                  <h3 class="project-title">InvoBill</h3>
+                  <span class="project-arrow-btn">↗</span>
+                </div>
+                <div class="project-category">Plugin · Invoicing &amp; Client Billing</div>
+                <p class="project-desc">Official WordPress &amp; WooCommerce plugin automating PDF invoices, packing slips, sequential billing numbering, and multi-currency tax compliance.</p>
+                <div class="project-tags">
+                  <span class="tech-tag">WordPress</span>
+                  <span class="tech-tag">WooCommerce</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">PDF Invoicing</span>
+                  <span class="tech-tag">Open Source</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BOTTOM CTA & CONTACT BANNER
+         ============================================================ -->
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta-banner-card">
+          <!-- Left Navy Section -->
+          <div class="cta-left">
+            <h2 class="cta-heading">
+              LET'S BUILD
+              <span class="script-accent">SOMETHING GREAT!</span>
+            </h2>
+            <p class="cta-subtext">
+              Have an app, web project, or contract in mind? Let's bring your ideas to life with clean, resilient code.
+            </p>
+
+            <svg class="cta-arrow-svg" viewBox="0 0 100 50" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <path d="M5,25 Q 50,5 85,25" />
+              <polyline points="75,18 86,25 77,34" />
+            </svg>
+          </div>
+
+          <!-- Right Coral Section -->
+          <div class="cta-right">
+            <span class="contact-pill-tag">CONTACT ME</span>
+
+            <div class="contact-links-list">
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div>
+                  <a href="mailto:rapsh75@yahoo.com" style="color: inherit; text-decoration: none;">rapsh75@yahoo.com</a>
+                  <button id="copy-email-btn" class="copy-email-btn" title="Copy email address">Copy</button>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <a href="https://github.com/herecleux" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <span>github.com/herecleux</span>
+              </a>
+
+              <!-- Location -->
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <span>Philippines · Remote Worldwide</span>
+              </div>
+            </div>
+
+            <!-- Playful Sticker -->
+            <div class="thank-you-sticker">
+              THANK YOU! <span>💙</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       SITE FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-left">
+        <span>PASSIONATE ABOUT ENGINEERING</span>
+        <span class="footer-star">✦</span>
+        <span>FOCUSED ON RESULTS</span>
+      </div>
+
+      <div class="footer-right">
+        <a href="policy-pdfscanner.html" class="footer-policy-link">PDFCreator Privacy Policy</a>
+        <a href="mailto:rapsh75@yahoo.com" class="footer-cta-pill">LET'S WORK TOGETHER!</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

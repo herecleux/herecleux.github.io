@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fixGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <filter id="shadowFix" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="5" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#fixGrad)" rx="16"/>
+  <circle cx="530" cy="80" r="140" fill="#F59E0B" opacity="0.15" />
+  <circle cx="70" cy="330" r="110" fill="#3B82F6" opacity="0.12" />
+
+  <!-- Browser Mockup -->
+  <g transform="translate(85, 45)" filter="url(#shadowFix)">
+    <rect width="430" height="300" rx="14" fill="#FFFFFF" stroke="#0B192C" stroke-width="3"/>
+    
+    <!-- Top Bar -->
+    <rect width="430" height="32" rx="14" fill="#F1F5F9"/>
+    <circle cx="20" cy="16" r="5" fill="#EF4444"/>
+    <circle cx="36" cy="16" r="5" fill="#F59E0B"/>
+    <circle cx="52" cy="16" r="5" fill="#10B981"/>
+    
+    <rect x="85" y="6" width="260" height="20" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="100" y="20" fill="#64748B" font-family="sans-serif" font-size="10">https://homefix.bh</text>
+
+    <!-- Web Content -->
+    <g transform="translate(15, 45)">
+      <!-- Hero Banner inside site -->
+      <rect width="400" height="95" rx="8" fill="#F59E0B"/>
+      <text x="20" y="36" fill="#0F172A" font-family="sans-serif" font-size="11" font-weight="900">HOMEFIX BAHRAIN</text>
+      <text x="20" y="58" fill="#0F172A" font-family="sans-serif" font-size="15" font-weight="900">RELIABLE HOME MAINTENANCE &amp; REPAIR</text>
+      <text x="20" y="75" fill="#78350F" font-family="sans-serif" font-size="10">Certified Technicians · Plumbing · AC Services · Electrical · Painting</text>
+
+      <!-- Services Grid Row -->
+      <g transform="translate(0, 108)">
+        <!-- Service 1 -->
+        <g transform="translate(0, 0)">
+          <rect width="126" height="125" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+          <circle cx="63" cy="38" r="24" fill="#FEF3C7"/>
+          <text x="63" y="44" fill="#D97706" font-family="sans-serif" font-size="20" text-anchor="middle">❄️</text>
+          <text x="63" y="82" fill="#0F172A" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">AC Maintenance</text>
+          <text x="63" y="96" fill="#64748B" font-family="sans-serif" font-size="9" text-anchor="middle">Deep Cleaning &amp; Gas</text>
+          <text x="63" y="116" fill="#D97706" font-family="sans-serif" font-size="11" font-weight="900" text-anchor="middle">Book Tech →</text>
+        </g>
+
+        <!-- Service 2 -->
+        <g transform="translate(137, 0)">
+          <rect width="126" height="125" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+          <circle cx="63" cy="38" r="24" fill="#DBEAFE"/>
+          <text x="63" y="44" fill="#2563EB" font-family="sans-serif" font-size="20" text-anchor="middle">🔧</text>
+          <text x="63" y="82" fill="#0F172A" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Plumbing Works</text>
+          <text x="63" y="96" fill="#64748B" font-family="sans-serif" font-size="9" text-anchor="middle">Leakage &amp; Installs</text>
+          <text x="63" y="116" fill="#2563EB" font-family="sans-serif" font-size="11" font-weight="900" text-anchor="middle">Book Tech →</text>
+        </g>
+
+        <!-- Service 3 -->
+        <g transform="translate(274, 0)">
+          <rect width="126" height="125" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+          <circle cx="63" cy="38" r="24" fill="#D1FAE5"/>
+          <text x="63" y="44" fill="#059669" font-family="sans-serif" font-size="20" text-anchor="middle">⚡</text>
+          <text x="63" y="82" fill="#0F172A" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Electrical Repair</text>
+          <text x="63" y="96" fill="#64748B" font-family="sans-serif" font-size="9" text-anchor="middle">Wiring &amp; Fixtures</text>
+          <text x="63" y="116" fill="#059669" font-family="sans-serif" font-size="11" font-weight="900" text-anchor="middle">Book Tech →</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Floating Badge -->
+  <g transform="translate(415, 20)" filter="url(#shadowFix)">
+    <rect width="150" height="38" rx="19" fill="#F59E0B" stroke="#0F172A" stroke-width="2"/>
+    <text x="75" y="24" fill="#0F172A" font-family="sans-serif" font-size="11" font-weight="900" text-anchor="middle">ON-DEMAND REPAIR</text>
+  </g>
+</svg>

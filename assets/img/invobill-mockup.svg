@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="invoGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0E2140" />
+      <stop offset="100%" stop-color="#1E3354" />
+    </linearGradient>
+    <filter id="shadowInvo" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="5" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#invoGrad)" rx="16"/>
+  <circle cx="510" cy="90" r="140" fill="#21759B" opacity="0.2" />
+  <circle cx="90" cy="310" r="110" fill="#96588A" opacity="0.2" />
+
+  <!-- WordPress & WooCommerce Integration Workspace Mockup -->
+  <g transform="translate(85, 45)" filter="url(#shadowInvo)">
+    <!-- Main Window -->
+    <rect width="430" height="300" rx="14" fill="#FFFFFF" stroke="#0B192C" stroke-width="3"/>
+    
+    <!-- Header -->
+    <rect width="430" height="34" rx="14" fill="#1E293B"/>
+    <circle cx="20" cy="17" r="5" fill="#EF4444"/>
+    <circle cx="36" cy="17" r="5" fill="#F59E0B"/>
+    <circle cx="52" cy="17" r="5" fill="#10B981"/>
+    
+    <text x="80" y="22" fill="#E2E8F0" font-family="sans-serif" font-size="11" font-weight="bold">WordPress Admin · InvoBill WooCommerce Billing</text>
+    <rect x="330" y="7" width="85" height="20" rx="10" fill="#21759B"/>
+    <text x="372" y="21" fill="#FFFFFF" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">ACTIVE PLUGIN</text>
+
+    <!-- Content Workspace -->
+    <g transform="translate(20, 50)">
+      <!-- Left: Plugin Settings Panel -->
+      <g transform="translate(0, 0)">
+        <rect width="180" height="225" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <text x="14" y="24" fill="#0F172A" font-family="sans-serif" font-size="12" font-weight="900">INVOICE TEMPLATE</text>
+        <text x="14" y="38" fill="#64748B" font-family="sans-serif" font-size="9">Sequential #INV-2026-0842</text>
+        
+        <!-- Toggle 1 -->
+        <rect x="14" y="55" width="152" height="28" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+        <text x="24" y="73" fill="#1E293B" font-family="sans-serif" font-size="9" font-weight="bold">Auto Attach PDF to Email</text>
+        <circle cx="152" cy="69" r="6" fill="#10B981"/>
+
+        <!-- Toggle 2 -->
+        <rect x="14" y="90" width="152" height="28" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+        <text x="24" y="108" fill="#1E293B" font-family="sans-serif" font-size="9" font-weight="bold">Multi-Currency &amp; Tax</text>
+        <circle cx="152" cy="104" r="6" fill="#10B981"/>
+
+        <!-- Toggle 3 -->
+        <rect x="14" y="125" width="152" height="28" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+        <text x="24" y="143" fill="#1E293B" font-family="sans-serif" font-size="9" font-weight="bold">Packing Slips Generator</text>
+        <circle cx="152" cy="139" r="6" fill="#10B981"/>
+
+        <!-- Button -->
+        <rect x="14" y="172" width="152" height="34" rx="17" fill="#96588A"/>
+        <text x="90" y="193" fill="#FFFFFF" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">⚡ SYNC WOOCOMMERCE</text>
+      </g>
+
+      <!-- Right: Generated PDF Invoice Preview -->
+      <g transform="translate(195, 0)">
+        <rect width="195" height="225" rx="8" fill="#FFFFFF" stroke="#CBD5E1" filter="url(#shadowInvo)"/>
+        <!-- Invoice Header -->
+        <rect x="15" y="15" width="40" height="10" rx="3" fill="#21759B"/>
+        <text x="180" y="24" fill="#0F172A" font-family="sans-serif" font-size="12" font-weight="900" text-anchor="end">INVOICE</text>
+        <text x="180" y="36" fill="#64748B" font-family="sans-serif" font-size="8" text-anchor="end">#INV-2026-0842</text>
+        
+        <line x1="15" y1="46" x2="180" y2="46" stroke="#E2E8F0" stroke-width="1"/>
+        
+        <!-- Table simulation -->
+        <rect x="15" y="56" width="165" height="16" fill="#F1F5F9"/>
+        <text x="20" y="68" fill="#475569" font-family="sans-serif" font-size="7" font-weight="bold">ITEM</text>
+        <text x="175" y="68" fill="#475569" font-family="sans-serif" font-size="7" font-weight="bold" text-anchor="end">TOTAL</text>
+
+        <rect x="15" y="78" width="80" height="6" rx="3" fill="#94A3B8"/>
+        <text x="175" y="84" fill="#0F172A" font-family="sans-serif" font-size="8" text-anchor="end">$129.00</text>
+
+        <rect x="15" y="92" width="95" height="6" rx="3" fill="#CBD5E1"/>
+        <text x="175" y="98" fill="#0F172A" font-family="sans-serif" font-size="8" text-anchor="end">$45.00</text>
+
+        <line x1="15" y1="120" x2="180" y2="120" stroke="#CBD5E1" stroke-width="1"/>
+        
+        <text x="110" y="136" fill="#64748B" font-family="sans-serif" font-size="8">VAT (10%):</text>
+        <text x="175" y="136" fill="#0F172A" font-family="sans-serif" font-size="8" text-anchor="end">$17.40</text>
+
+        <text x="110" y="152" fill="#0F172A" font-family="sans-serif" font-size="9" font-weight="bold">TOTAL DUE:</text>
+        <text x="175" y="152" fill="#21759B" font-family="sans-serif" font-size="10" font-weight="900" text-anchor="end">$191.40</text>
+
+        <!-- Paid stamp -->
+        <g transform="translate(30, 160) rotate(-8)">
+          <rect width="65" height="24" rx="4" fill="none" stroke="#10B981" stroke-width="2"/>
+          <text x="32" y="16" fill="#10B981" font-family="sans-serif" font-size="10" font-weight="900" text-anchor="middle">PAID</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Top Floating Badge -->
+  <g transform="translate(425, 20)" filter="url(#shadowInvo)">
+    <rect width="140" height="38" rx="19" fill="#21759B" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="70" y="24" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="900" text-anchor="middle">WORDPRESS.ORG</text>
+  </g>
+</svg>
