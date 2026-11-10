@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - StoreOnBox POS &amp; Inventory</title>
+  <meta name="description" content="Official Privacy Policy for StoreOnBox POS &amp; Inventory by Heherson Apura. Details on data collection, Google Sign-In, AdMob, Google Play Billing, offline storage, and data deletion rights.">
+  <meta name="robots" content="index, follow">
+  
+  <style>
+    :root {
+      --primary: #0B192C;
+      --primary-light: #1E3E62;
+      --accent: #2563EB;
+      --accent-cyan: #00D2FF;
+      --accent-coral: #FF5722;
+      --success: #10B981;
+      --warning: #F59E0B;
+      --text: #0F172A;
+      --text-muted: #475569;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --border: #CBD5E1;
+      --border-dark: #0B192C;
+      --shadow-sm: 2px 2px 0px rgba(11, 25, 44, 0.15);
+      --shadow-neo: 4px 4px 0px #0B192C;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-pill: 9999px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #F1F5F9;
+        --text-muted: #94A3B8;
+        --bg: #06101E;
+        --card-bg: #0B192C;
+        --border: #1E3E62;
+        --border-dark: #38BDF8;
+        --shadow-neo: 4px 4px 0px #1E3E62;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      background-image: radial-gradient(rgba(148, 163, 184, 0.25) 1.2px, transparent 1.2px);
+      background-size: 24px 24px;
+      color: var(--text);
+      line-height: 1.65;
+      padding: 28px 16px 60px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 40px 32px;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      border: 2px solid var(--border);
+    }
+
+    /* Top Navigation */
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 28px;
+      padding-bottom: 18px;
+      border-bottom: 2px solid var(--border);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .back-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      padding: 7px 16px;
+      border: 2px solid var(--border);
+      border-radius: var(--radius-pill);
+      background: var(--bg);
+      transition: all 0.2s ease;
+    }
+
+    .back-home:hover {
+      background: var(--primary);
+      color: #FFFFFF;
+      border-color: var(--primary);
+      transform: translateY(-1px);
+    }
+
+    .nav-badge-app {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--accent);
+      background: rgba(37, 99, 235, 0.08);
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(37, 99, 235, 0.2);
+    }
+
+    /* Header */
+    header {
+      margin-bottom: 32px;
+    }
+
+    .app-icon-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .app-icon-badge {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, #0B192C 0%, #1E3E62 100%);
+      color: var(--accent-cyan);
+      border: 2px solid var(--border);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      box-shadow: 2px 2px 0px rgba(0,0,0,0.15);
+    }
+
+    .app-title-group h1 {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--text);
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
+
+    .meta-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
+    .badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .dev-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 6px;
+      background: rgba(11, 25, 44, 0.06);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 12px;
+      border: 1px solid var(--border);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .dev-badge {
+        background: rgba(255, 255, 255, 0.06);
+      }
+    }
+
+    .compliance-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 6px;
+      background: rgba(16, 185, 129, 0.1);
+      color: #059669;
+      font-weight: 700;
+      font-size: 12px;
+      border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .compliance-pill {
+        color: #34D399;
+      }
+    }
+
+    /* Key Feature Highlights */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 28px 0;
+    }
+
+    .highlight-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      position: relative;
+    }
+
+    .highlight-card .h-icon {
+      font-size: 22px;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .highlight-card .h-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .highlight-card .h-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Table of Contents */
+    .toc-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
+      margin: 26px 0 36px;
+    }
+
+    .toc-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px 16px;
+      list-style: none;
+    }
+
+    .toc-grid a {
+      font-size: 13px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .toc-grid a:hover {
+      color: var(--accent-coral);
+      text-decoration: underline;
+    }
+
+    /* Content Typography */
+    .policy-intro {
+      font-size: 15px;
+      color: var(--text);
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+
+    .policy-section {
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 18px 0 8px;
+    }
+
+    p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      line-height: 1.65;
+    }
+
+    ul {
+      margin: 10px 0 16px 20px;
+    }
+
+    li {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    code {
+      font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 12.5px;
+      background: rgba(11, 25, 44, 0.08);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--text);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      code {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    /* Third party cards */
+    .sdk-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+      margin-bottom: 14px;
+    }
+
+    .sdk-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .sdk-badge {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: var(--radius-pill);
+      background: rgba(37, 99, 235, 0.1);
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* Deletion highlight box */
+    .deletion-box {
+      background: rgba(239, 68, 68, 0.06);
+      border: 1px solid rgba(239, 68, 68, 0.25);
+      border-left: 4px solid #EF4444;
+      border-radius: var(--radius-sm);
+      padding: 18px;
+      margin: 18px 0;
+    }
+
+    .deletion-box h3 {
+      margin-top: 0;
+      color: #DC2626;
+      font-size: 15px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .deletion-box h3 {
+        color: #F87171;
+      }
+    }
+
+    /* Contact Card */
+    .contact-card {
+      background: linear-gradient(135deg, rgba(11, 25, 44, 0.04) 0%, rgba(37, 99, 235, 0.06) 100%);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-top: 36px;
+    }
+
+    .contact-card h2 {
+      margin-bottom: 12px;
+      border-bottom: none;
+      padding-top: 0;
+    }
+
+    .contact-detail-row {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+    }
+
+    .contact-item .c-icon {
+      font-size: 18px;
+      width: 28px;
+    }
+
+    .copy-pill-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-pill);
+      padding: 3px 10px;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--accent);
+      cursor: pointer;
+      margin-left: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .copy-pill-btn:hover {
+      background: var(--primary);
+      color: #FFFFFF;
+      border-color: var(--primary);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: var(--accent-coral);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        padding: 24px 18px;
+      }
+      .highlights-grid {
+        grid-template-columns: 1fr;
+      }
+      .toc-grid {
+        grid-template-columns: 1fr;
+      }
+      .app-title-group h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+      <a href="../index.html" class="back-home">
+        <span>←</span>
+        <span>Heherson Montes Apura Portfolio</span>
+      </a>
+      <span class="nav-badge-app">StoreOnBox POS &amp; Inventory</span>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+      <div class="app-icon-row">
+        <div class="app-icon-badge">📦</div>
+        <div class="app-title-group">
+          <h1>Privacy Policy for StoreOnBox POS</h1>
+          <p class="meta-subtitle">Effective Date: November 10, 2026 &bull; Last Updated: November 10, 2026</p>
+        </div>
+      </div>
+
+      <div class="badges-row">
+        <span class="dev-badge">👨‍💻 Developer: Heherson Apura</span>
+        <span class="dev-badge">📱 App: StoreOnBox POS &amp; Inventory</span>
+        <span class="compliance-pill">✓ Google Play Compliant</span>
+        <span class="compliance-pill">✓ GDPR &amp; CCPA Ready</span>
+      </div>
+    </header>
+
+    <!-- Key Highlight Callouts -->
+    <section class="highlights-grid">
+      <div class="highlight-card">
+        <span class="h-icon">🛡️</span>
+        <div class="h-title">Offline-First Local Storage</div>
+        <div class="h-desc">Your daily sales, inventory, and receipts are stored securely on your local device SQLite database. Fully usable without internet.</div>
+      </div>
+      <div class="highlight-card">
+        <span class="h-icon">💳</span>
+        <div class="h-title">Zero Financial Card Storage</div>
+        <div class="h-desc">All premium subscriptions are processed directly through Google Play Billing. We never store credit cards, bank accounts, or billing addresses.</div>
+      </div>
+      <div class="highlight-card">
+        <span class="h-icon">🗑️</span>
+        <div class="h-title">Complete Data Deletion</div>
+        <div class="h-desc">Full Google Play compliance. Delete your account and purge cloud backup records in-app or via email anytime.</div>
+      </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <nav class="toc-box" aria-label="Table of contents">
+      <div class="toc-title">📑 Quick Navigation</div>
+      <ul class="toc-grid">
+        <li><a href="#sec-1">1. Information We Collect</a></li>
+        <li><a href="#sec-2">2. How We Use Your Information</a></li>
+        <li><a href="#sec-3">3. Third-Party Services &amp; SDKs</a></li>
+        <li><a href="#sec-4">4. Offline Architecture &amp; Storage</a></li>
+        <li><a href="#sec-5">5. Data Retention &amp; Deletion</a></li>
+        <li><a href="#sec-6">6. Information Security</a></li>
+        <li><a href="#sec-7">7. Children's Privacy (COPPA)</a></li>
+        <li><a href="#sec-8">8. International Data Rights</a></li>
+        <li><a href="#sec-9">9. Changes to This Policy</a></li>
+        <li><a href="#sec-10">10. Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Preamble -->
+    <div class="policy-intro">
+      <p>
+        This Privacy Policy explains how <strong>StoreOnBox</strong> ("we", "our", or "us") collects, uses, discloses, and safeguards your information when you use our mobile application <strong>StoreOnBox POS &amp; Inventory</strong> (the "Application" or "App").
+      </p>
+      <p>
+        Please read this Privacy Policy carefully. By downloading, accessing, or using the Application, you consent to the practices described in this Privacy Policy. If you do not agree with any terms of this policy, please do not access or use the Application.
+      </p>
+    </div>
+
+    <!-- Section 1 -->
+    <section id="sec-1" class="policy-section">
+      <h2>1. Information We Collect</h2>
+      <p>
+        We collect information to provide, maintain, and improve our Point-of-Sale services, support cloud backups, process in-app subscriptions, and display relevant advertisements.
+      </p>
+
+      <h3>A. Information You Provide Directly</h3>
+      <ul>
+        <li>
+          <strong>Account Information (Google Sign-In):</strong> When you sign in using Google Login, we receive basic profile information authorized by your Google Account permissions, including:
+          <ul>
+            <li>Full Name</li>
+            <li>Email Address</li>
+            <li>Profile Picture URL</li>
+            <li>Unique Google User Identifier (OAuth UID)</li>
+          </ul>
+        </li>
+        <li><strong>Store &amp; Business Profile Data:</strong> Business name, contact number, store address, currency preferences, tax rates, and receipt footer/header notes.</li>
+        <li><strong>Catalog &amp; Inventory Data:</strong> Product names, stock quantities, SKU/barcodes, cost prices, retail selling prices, categories, and item photos.</li>
+        <li><strong>Sales &amp; Transaction Records:</strong> Order receipts, payment methods (Cash, Card, Digital Wallet), timestamps, discount amounts, items purchased, and transaction status.</li>
+        <li><strong>Customer Support Inquiries:</strong> Any feedback, correspondence, or bug reports you voluntarily submit to our support channels.</li>
+      </ul>
+
+      <h3>B. Information Collected Automatically</h3>
+      <ul>
+        <li><strong>Device and Usage Information:</strong> Device manufacturer, model, operating system version, system language, unique device identifiers, and network connection status.</li>
+        <li><strong>Hardware Peripheral Identifiers:</strong> Bluetooth/USB MAC addresses or network IP addresses of connected ESC/POS thermal printers, barcode scanners, and cash drawers (used strictly for local hardware connectivity).</li>
+        <li><strong>Crash Reports and Diagnostic Logs:</strong> Technical data regarding application crashes, memory state, and performance metrics.</li>
+      </ul>
+
+      <h3>C. Information Collected via Third-Party Integrations</h3>
+      <ul>
+        <li>
+          <strong>Google AdMob:</strong> To deliver banner, interstitial, or rewarded advertisements, Google AdMob may automatically collect your device's Google Advertising ID (AAID), approximate geographic location (IP address), device hardware specs, ad interaction metrics, and cookies or similar tracking identifiers.
+        </li>
+        <li>
+          <strong>Google Play Billing (In-App Subscriptions):</strong> When you subscribe to a premium tier, Google Play Billing processes the transaction. We receive subscription confirmation data, including purchase tokens, product IDs, renewal/expiration dates, and transaction identifiers. We do not collect or store your credit card numbers, bank account numbers, or billing addresses. All financial transactions are processed securely through Google Play.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="sec-2" class="policy-section">
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the information we collect for the following legitimate business and service purposes:</p>
+      <ol style="margin-left: 20px;">
+        <li style="margin-bottom: 8px;"><strong>Core POS Operations:</strong> To record sales, adjust inventory counts in real time, print customer receipts, and generate store analytics.</li>
+        <li style="margin-bottom: 8px;"><strong>Account Authentication &amp; Session Management:</strong> To authenticate your identity via Google Sign-In and keep your account secured.</li>
+        <li style="margin-bottom: 8px;"><strong>Cloud Sync &amp; Data Backup:</strong> To securely back up your store inventory, transactions, and settings to our cloud servers, enabling real-time multi-device sync and disaster recovery if your device is lost or replaced.</li>
+        <li style="margin-bottom: 8px;"><strong>Subscription Management:</strong> To unlock PRO/Premium features, verify active subscription entitlements, process tier upgrades, and enforce billing cycles via Google Play Billing.</li>
+        <li style="margin-bottom: 8px;"><strong>Advertising Delivery (AdMob):</strong> To serve non-personalized or personalized advertisements within the free tier of the Application according to your device consent preferences.</li>
+        <li style="margin-bottom: 8px;"><strong>Customer Service &amp; App Improvements:</strong> To diagnose technical bugs, optimize application speed, analyze feature adoption, and respond to your customer inquiries.</li>
+        <li style="margin-bottom: 8px;"><strong>Legal Compliance &amp; Security:</strong> To protect against fraudulent transactions, unauthorized account access, and ensure compliance with applicable consumer laws.</li>
+      </ol>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="sec-3" class="policy-section">
+      <h2>3. Third-Party Services and SDK Disclosures</h2>
+      <p>The Application integrates trusted third-party software development kits (SDKs) that process data under their respective privacy policies:</p>
+
+      <div class="sdk-card">
+        <div class="sdk-title">
+          <span>1. Google Sign-In / Firebase Authentication</span>
+          <span class="sdk-badge">Auth</span>
+        </div>
+        <p><strong>Purpose:</strong> Identity verification and account authorization.</p>
+        <p><strong>Data Accessed:</strong> Email address, name, profile image, unique identifier.</p>
+        <p><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></p>
+      </div>
+
+      <div class="sdk-card">
+        <div class="sdk-title">
+          <span>2. Google AdMob</span>
+          <span class="sdk-badge">Monetization</span>
+        </div>
+        <p><strong>Purpose:</strong> Monetization via in-app banner and interstitial advertisements.</p>
+        <p><strong>Data Accessed:</strong> Advertising ID, IP address, coarse location, device identifiers, ad interaction data.</p>
+        <p><strong>Privacy Policy:</strong> <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google AdMob Privacy &amp; Terms</a></p>
+        <p><strong>Opt-Out:</strong> You can reset or opt out of personalized ads in your Android device settings via <code>Settings &gt; Google &gt; Ads &gt; Delete advertising ID</code> or by upgrading to an ad-free subscription within StoreOnBox.</p>
+      </div>
+
+      <div class="sdk-card">
+        <div class="sdk-title">
+          <span>3. Google Play In-App Billing</span>
+          <span class="sdk-badge">Payments</span>
+        </div>
+        <p><strong>Purpose:</strong> Processing subscriptions and digital purchases.</p>
+        <p><strong>Data Accessed:</strong> Purchase token, subscription status, transaction ID.</p>
+        <p><strong>Privacy Policy:</strong> <a href="https://play.google.com/intl/en_us/about/play-terms/" target="_blank" rel="noopener noreferrer">Google Play Terms of Service</a></p>
+      </div>
+
+      <div class="sdk-card">
+        <div class="sdk-title">
+          <span>4. Cloud Backup &amp; Infrastructure Providers</span>
+          <span class="sdk-badge">Storage</span>
+        </div>
+        <p><strong>Purpose:</strong> Encrypted storage of catalog, sales transactions, and database backups.</p>
+        <p><strong>Data Accessed:</strong> Encrypted store database blobs, catalog records, sales sync queue.</p>
+        <p><strong>Security:</strong> All transmissions between the app and our cloud storage are secured using Transport Layer Security (TLS 1.3 / HTTPS).</p>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="sec-4" class="policy-section">
+      <h2>4. Offline-First Architecture &amp; Data Storage</h2>
+      <ul>
+        <li>
+          <strong>Local Storage:</strong> StoreOnBox is engineered with an offline-first architecture. All business records, inventory catalogs, and daily sales are saved locally on your device in an encrypted SQLite database. You can operate fully without an active internet connection.
+        </li>
+        <li>
+          <strong>Cloud Synchronization:</strong> When internet connectivity is available and you are logged into your account, changes are synchronized to our cloud backup infrastructure to ensure seamless multi-terminal synchronization and data safety.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section 5 -->
+    <section id="sec-5" class="policy-section">
+      <h2>5. Data Retention and Account / Data Deletion</h2>
+      <h3>A. Retention Period</h3>
+      <p>
+        We retain your personal information, sales history, and inventory backups for as long as your account remains active or as necessary to provide services, resolve disputes, and comply with accounting or legal regulations.
+      </p>
+
+      <div class="deletion-box">
+        <h3>B. User Rights to Request Deletion (Google Play Compliance)</h3>
+        <p>You have the complete right to request the permanent deletion of your account and all associated data at any time.</p>
+        <ul>
+          <li><strong>In-App Deletion:</strong> Navigate to <code>MyStore &gt; Settings &gt; Account &gt; Delete Account and Cloud Data</code>. Confirming this will queue an immediate purge of your cloud backup records.</li>
+          <li><strong>Web/Email Request:</strong> If you have uninstalled the application or cannot access your device, you can submit a deletion request by emailing <a href="mailto:rapsh75@yahoo.com?subject=Data%20Deletion%20Request">rapsh75@yahoo.com</a> (or our support contact) with the subject line <strong>"Data Deletion Request"</strong> from the email address linked to your Google Account.</li>
+          <li>
+            <strong>What Gets Deleted:</strong> Upon receiving your request, we permanently erase:
+            <ul>
+              <li>Your Google account linkage and profile data.</li>
+              <li>Your cloud-synced store catalog, products, categories, and images.</li>
+              <li>All cloud-stored transaction records, sales reports, and database snapshots.</li>
+            </ul>
+          </li>
+        </ul>
+        <p style="margin-bottom: 0; font-size: 13px;">
+          * Deletion is processed within thirty (30) business days, except where legal or financial audit regulations require retention of specific tax records.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section id="sec-6" class="policy-section">
+      <h2>6. Information Security</h2>
+      <p>We implement industry-standard technical and organizational security controls to protect your business information:</p>
+      <ul>
+        <li><strong>Encryption in Transit:</strong> All communications between StoreOnBox and cloud endpoints use HTTPS with strong SSL/TLS encryption.</li>
+        <li><strong>Database Protection:</strong> Local databases use write-ahead logging (WAL) and secure sandboxed app storage, inaccessible to other Android apps on non-rooted devices.</li>
+        <li><strong>No Cardholder Data Storage:</strong> Credit card numbers and sensitive cardholder payment information are processed by certified external payment hardware/Google Play and never touch or reside on our servers.</li>
+      </ul>
+      <p>
+        While we strive to employ best-in-class security measures, no electronic transmission over the internet or mobile storage is 100% immune from security breaches.
+      </p>
+    </section>
+
+    <!-- Section 7 -->
+    <section id="sec-7" class="policy-section">
+      <h2>7. Children's Privacy (COPPA Compliance)</h2>
+      <p>
+        StoreOnBox is a commercial business utility designed exclusively for merchants, store owners, cashiers, and entrepreneurs. Our Application is not directed toward children under the age of 13 (or under 16 in the European Union). We do not knowingly collect personal information from children. If you become aware that a child has provided us with personal data, please contact us immediately, and we will take prompt steps to remove such information.
+      </p>
+    </section>
+
+    <!-- Section 8 -->
+    <section id="sec-8" class="policy-section">
+      <h2>8. International Data Rights</h2>
+      <h3>A. European General Data Protection Regulation (GDPR / UK GDPR)</h3>
+      <p>If you reside within the European Economic Area (EEA) or the United Kingdom, you possess the right to:</p>
+      <ul>
+        <li>Access, obtain a copy of, or rectify your personal data.</li>
+        <li>Request erasure of your data ("Right to be Forgotten").</li>
+        <li>Restrict or object to processing of personal information.</li>
+        <li>Data portability (exporting your catalog and transaction records).</li>
+        <li>Lodge a complaint with a supervisory data protection authority in your jurisdiction.</li>
+      </ul>
+
+      <h3>B. California Consumer Privacy Act (CCPA / CPRA)</h3>
+      <p>If you are a California resident:</p>
+      <ul>
+        <li>You have the right to know what categories of personal information we collect, disclose, or use.</li>
+        <li>You have the right to request deletion of your personal information.</li>
+        <li>We do not sell personal information or customer financial records to data brokers. Third-party advertising partners (Google AdMob) may collect device identifiers as detailed in Section 3.</li>
+      </ul>
+    </section>
+
+    <!-- Section 9 -->
+    <section id="sec-9" class="policy-section">
+      <h2>9. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy periodically to reflect enhancements to our features, third-party libraries, or applicable laws. When changes occur:</p>
+      <ul>
+        <li>We will update the "Effective Date" at the top of this policy.</li>
+        <li>Significant modifications will be communicated via an in-app notice, banner update, or email to registered users.</li>
+        <li>Continued use of StoreOnBox POS after such changes constitutes acceptance of the updated policy.</li>
+      </ul>
+    </section>
+
+    <!-- Section 10 -->
+    <section id="sec-10" class="contact-card">
+      <h2>10. Contact Us</h2>
+      <p>If you have questions, comments, or requests regarding this Privacy Policy or your personal information, please contact our Data Protection Officer:</p>
+      
+      <div class="contact-detail-row">
+        <div class="contact-item">
+          <span class="c-icon">📱</span>
+          <span><strong>App Name:</strong> StoreOnBox POS &amp; Inventory</span>
+        </div>
+        <div class="contact-item">
+          <span class="c-icon">👨‍💻</span>
+          <span><strong>Developer:</strong> Heherson Apura</span>
+        </div>
+        <div class="contact-item">
+          <span class="c-icon">✉️</span>
+          <span>
+            <strong>Support &amp; Privacy Email:</strong> 
+            <a href="mailto:rapsh75@yahoo.com">rapsh75@yahoo.com</a>
+            <button id="copy-btn" class="copy-pill-btn" onclick="copyEmail()">Copy</button>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Heherson Apura &bull; StoreOnBox POS &amp; Inventory &bull; All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="../index.html">Developer Portfolio</a>
+        <span>&bull;</span>
+        <a href="../policy-pdfscanner.html">PDFCreator Privacy Policy</a>
+        <span>&bull;</span>
+        <a href="#sec-5">Data Deletion Policy</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function copyEmail() {
+      const email = 'rapsh75@yahoo.com';
+      navigator.clipboard.writeText(email).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.innerText = 'Copied! ✨';
+        setTimeout(() => {
+          btn.innerText = 'Copy';
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
